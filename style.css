@@ -176,3 +176,21 @@ button:hover {
     padding: 5px;
     transition: all 0.4s;
 }
+
+.input-form:focus + .focus-input-form::after {
+    top: -20px;
+    font-size: 15px;
+}
+
+.input-form:focus + .focus-input-form::before {
+    width: 100%;
+}
+
+.has-val.input-form:focus + .focus-input-form::after {
+    top: -20px;
+    font-size: 15px;
+}
+
+.has-val.input-form:focus + .focus-input-form::before {
+    width: 100%;
+}
