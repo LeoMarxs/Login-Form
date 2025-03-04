@@ -48,3 +48,41 @@ input, button {
     outline: none !important;
     border: none;
 }
+
+button:hover {
+    cursor: pointer;
+}
+
+.text1 {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: var(--text1);
+    line-height: 1.5;
+}
+
+.text2 {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: var(--main-color);
+    line-height: 1.5;
+}
+
+.margin-botton-35 {
+    margin-bottom: 35px;
+}
+
+.margin-top-35 {
+    margin-top: 35px;
+}
+
+.margin-botton-8 {
+    margin-bottom:-8px;
+}
+
+.margin-top-8 {
+    margin-top:-8px;
+}
+
+.margin-left-50 {
+    margin-left: 50px;
+}
