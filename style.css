@@ -76,11 +76,11 @@ button:hover {
 }
 
 .margin-botton-8 {
-    margin-bottom:-8px;
+    margin-bottom: 8px;
 }
 
 .margin-top-8 {
-    margin-top:-8px;
+    margin-top: 8px;
 }
 
 .margin-left-50 {
@@ -216,8 +216,49 @@ button:hover {
     background-color: var(--main-color);
     border-radius: 5px;
     transition: all 0.4s;   
+    margin-top: 20px;
 }
 
 .login-form-btn:hover {
     background-color: var(--highligth-text);
+}
+
+a {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--link-color);
+    margin: 0px;
+    transition: all 0.4s;   
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--highligth-text);
+}
+
+.login-utils {
+    margin-top: 20px;
+}
+
+.login-utils li {
+    position: relative;
+    padding-left: 16px;
+}
+
+.login-utils li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--points-list);
+    top: 45%;
+    transform: translateY(-50%);
+    left: 0;
 }
