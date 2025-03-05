@@ -1,0 +1,8 @@
+.login-form-title {
+    display: block;
+    font-family: Poppins-Bold;
+    font-size: 39px;
+    color: var(--highligth-text);
+    line-height: 1.2;
+    text-align: center;
+}
