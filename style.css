@@ -67,7 +67,7 @@ button:hover {
     line-height: 1.5;
 }
 
-.margin-botton-35 {
+.margin-bottom-35 {
     margin-bottom: 35px;
 }
 
@@ -75,7 +75,7 @@ button:hover {
     margin-top: 35px;
 }
 
-.margin-botton-8 {
+.margin-bottom-8 {
     margin-bottom: 8px;
 }
 
@@ -186,12 +186,12 @@ button:hover {
     width: 100%;
 }
 
-.has-val.input-form:focus + .focus-input-form::after {
+.has-val.input-form + .focus-input-form::after {
     top: -20px;
     font-size: 15px;
 }
 
-.has-val.input-form:focus + .focus-input-form::before {
+.has-val.input-form + .focus-input-form::before {
     width: 100%;
 }
 
@@ -216,7 +216,6 @@ button:hover {
     background-color: var(--main-color);
     border-radius: 5px;
     transition: all 0.4s;   
-    margin-top: 20px;
 }
 
 .login-form-btn:hover {
