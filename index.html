@@ -6,6 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
     <link rel="stylesheet" href="css/minimal.css">
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="images/senha.png"/>
     <title>Login</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <div class="container">
         <div class="container-login">
             <div class="wrap-login">
-                <form class="login-form">
+                <form class="login-form" id="login-form">
                     <span class="login-form-title">
                         Faça o login
                     </span>
@@ -29,7 +30,7 @@
                     </div>
 
                     <div class="container-login-form-btn">
-                        <button class="login-form-btn">Login</button>
+                        <button class="login-form-btn" type="submit">Login</button>
                     </div>
 
                     <ul class="login-utils">
@@ -70,7 +71,20 @@
                 }
             });
         }
-    </script>
 
+        let form = document.getElementById("login-form");
+        form.addEventListener("submit", function(event) {
+            let inputs = document.getElementsByClassName("input-form");
+            for(let input of inputs) {
+                if(input.value.trim() == "") {
+                    input.parentElement.classList.add("wrap-input-invalid");
+                }
+            }
+
+            event.preventDefault();
+
+        });
+    </script>
+ 
 </body>
-</html>
+</html> 
